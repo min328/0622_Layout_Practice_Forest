@@ -1,14 +1,19 @@
 /* eslint-disable */
 
 
+$(function () {
+    $(".tabBtn").click(function () {
 
-    $(function () {
-       $("div.tabBtn").click(function(){
-           $(this).css({
-           "color" : "red"
-            , "border-bottom" : "2px solid red"
+        $(this).siblings("button").css({
+            "color": "#333",
+            "border": "none"
         });
-           $(this).children("img").attr("src","images/tab_check.png")
-       });
-    });
 
+        $(this).siblings("button").children("img").attr("src", "images/tab_bullet.png");
+        $(this).css({
+            "color": "red",
+            "border-bottom": "2px solid red"
+        });
+        $(this).children("img").attr("src", "images/tab_check.png");
+    });
+});
