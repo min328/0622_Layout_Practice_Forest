@@ -1,0 +1,263 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+/* reset */
+* {
+    color: #333;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {background-color: #fff;}
+
+a:link, a:visited {color: #333;}
+a:hover, a:active {color: #444;}
+img {vertical-align: middle;}
+
+ul {list-style: none;}
+
+.flex-container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+/* reset */
+
+/* guide line*/
+/*div#wrap {border: 1px solid #000;}*/
+/*div#mainFrame {border: 1px solid #000;}*/
+/*div#title {border: 1px solid #000;}*/
+/*nav#gnb {border: 1px solid #000;}*/
+/*div#slideCards {border: 1px solid #000;}*/
+/*div#asideFrame {border: 1px solid #000;}*/
+/*div#bulletin1 {border: 1px solid #000;}*/
+/*div#bulletin2 {border: 1px solid #000;}*/
+/* guide line*/
+
+/* div#wrap */
+div#wrap {
+    width: 1350px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ddd;
+}
+/* div#wrap */
+
+
+/* div#mainFrame */
+div#mainFrame {
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+/* div#mainFrame */
+
+
+/* div#title */
+div#title{
+    text-align: center;
+    padding: 20px;
+}
+/* div#title */
+
+
+/* nav#gnb */
+nav#gnb > div {
+    width: 170px;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-left: none;
+    justify-content: space-between;
+
+    line-height: 45px;
+    text-align: center;
+    font-weight: 600;
+}
+nav#gnb > div:last-child {
+    border-right: none;
+}
+
+#gnb > div:hover {
+    color: #fff;
+    background-color: #16a82f;
+    font-weight: 500;
+}
+/* nav#gnb */
+
+
+/* div#slideCards */
+div#slideCards {
+    padding: 30px 20px;
+    justify-content: space-between;
+}
+
+.slideBtn {
+    line-height: 290px;
+}
+
+.tripPlace {
+    width: 265px;
+    height: 290px;
+    border: 1px solid #ddd;
+}
+
+div#tripInfo {
+    padding: 20px;
+}
+
+#tripInfo > p:first-child {
+    color: #087438;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#tripInfo > p:nth-child(2) {
+    color: #777;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#tripInfo > p:last-child {
+    color: #555;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+hr {
+    margin-bottom: 5px;
+}
+/* div#slideCards */
+
+
+/* div#asideFrame */
+div#asideFrame {
+    justify-content: space-between;
+}
+.bulletin {
+    height: 350px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+/* div#asideFrame */
+
+
+/* div#bulletin1 */
+div#bulletin1 {
+    width: 870px;
+    padding: 20px;
+}
+
+div#tab {
+    border-bottom: 2px solid #ddd;
+}
+
+#tab > div:last-child {
+    line-height: 30px;
+    position: relative;
+    left: 560px;
+}
+
+.tabBtn {
+    width: 110px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: 21px;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.tabBtn > img {
+    padding: 5px;
+}
+/* div#bulletin1 */
+
+
+/* table#bulletinContents */
+
+table tr td {
+    padding: 20px 0px;
+
+}
+
+tr td:last-child {
+    padding-left: 30px;
+}
+
+
+.date {
+    width: 90px;
+    height: 90px;
+    background-color: #ddd;
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.date > p:first-child {
+    color: #ef6363;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.date > p:last-child {
+    margin-top: 2px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+div.contents {
+    width: 300px;
+    height: 80px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.contents > p:first-child {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.contents > p:last-child {
+    color: #777;
+    font-size: 13px;
+    line-height: 20px;
+}
+/* table#bulletinContents */
+
+
+/* div#bulletin2 */
+div#bulletin2 {
+    width: 440px;
+    text-align: center;
+    padding: 25px;
+}
+
+div#bulletin2controller {
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+#bulletin2controller > p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+div#icons > img {
+    margin: 5px;
+}
+/* div#bulletin2 */

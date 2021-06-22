@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Laout Practice - Forest</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="mainFrame">
+            <div id="title">
+                <img src="images/header.png" alt="헤더이미지">
+            </div> <!-- div#title -->
+            <nav id="gnb" class="flex-container">
+                <div>서울/경기</div>
+                <div>강원</div>
+                <div>충북</div>
+                <div>충남</div>
+                <div>전북</div>
+                <div>전남</div>
+                <div>경북</div>
+                <div>경남</div>
+            </nav> <!-- nav#gnb -->
+
+            <div id="slideCards" class="flex-container">
+                <div id="leftBtn" class="slideBtn">
+                    <a href="#"><img src="images/prev_img.png" alt="이전이미지버튼"></a>
+                </div>
+                <div class="tripPlace">
+                    <img src="images/gallery_01.jpg" alt="유명산 자연휴양림">
+                    <div id="tripInfo">
+                        <p>유명산 자영휴양림
+                            <a href="#"><img src="images/home.png" alt="해당휴양림으로이동버튼"></a>
+                        </p>
+                        <p>경기 가평군 설악면 유명산길 79-53</p>
+                        <hr>
+                        <p>·이용문의 : 031-589-5487</p>
+                    </div> <!-- div#tripInfo -->
+                </div> <!-- div.tripPlace -->
+                <div class="tripPlace">
+                    <img src="images/gallery_02.jpg" alt="산음 자연휴양림">
+                    <div id="tripInfo">
+                        <p>산음 자영휴양림
+                            <a href="#"><img src="images/home.png" alt="해당휴양림으로이동버튼"></a>
+                        </p>
+                        <p>경기도 양평군 단월면 고북길 327</p>
+                        <hr>
+                        <p>·이용문의 : 031-774-8133</p>
+                    </div> <!-- div#tripInfo -->
+                </div> <!-- div.tripPlace -->
+                <div class="tripPlace">
+                    <img src="images/gallery_03.jpg" alt="아세안 자연휴양림">
+                    <div id="tripInfo">
+                        <p>아세안 자영휴양림
+                            <a href="#"><img src="images/home.png" alt="해당휴양림으로이동버튼"></a>
+                        </p>
+                        <p>경기도 양주시 백석읍 기산로 472</p>
+                        <hr>
+                        <p>·이용문의 : 031-871-2796</p>
+                    </div> <!-- div#tripInfo -->
+                </div> <!-- div.tripPlace -->
+                <div class="tripPlace">
+                    <img src="images/gallery_04.jpg" alt="중미산 자연휴양림">
+                    <div id="tripInfo">
+                        <p>중미산 자영휴양림
+                            <a href="#"><img src="images/home.png" alt="해당휴양림으로이동버튼"></a>
+                        </p>
+                        <p>경기도 양평군 옥천면 중미산로 1152</p>
+                        <hr>
+                        <p>·이용문의 : 031-771-7166</p>
+                    </div> <!-- div#tripInfo -->
+                </div> <!-- div.tripPlace -->
+                <div id="rightBtn" class="slideBtn">
+                    <a href="#"><img src="images/next_img.png" alt="다음이미지버튼"></a>
+                </div>
+            </div> <!-- div#slideCards -->
+        </div> <!-- div# mainFrame -->
+        <div id="asideFrame" class="flex-container">
+            <div id="bulletin1" class="bulletin">
+                <div id="tab" class="flex-container">
+                    <div class="tabBtn" onclick="tabBtnSelected()">
+                        <img src="images/tab_bullet.png">
+                        공지사항
+                    </div>
+                    <div class="tabBtn" onclick="tabBtnSelected()">
+                        <img src="images/tab_bullet.png">
+                        보도자료
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/more.png" alt="더보기"></a>
+                    </div>
+                </div> <!-- div#tab -->
+                <table id="bulletinContents">
+                    <tr>
+                        <td>
+                            <div class="flex-container">
+                                <div class="date">
+                                    <p>06</p>
+                                    <p>2019.03</p>
+                                </div>
+                                <div class="contents">
+                                    <p>국립자연휴양림 '스탬프투어' 이벤트...</p>
+                                    <p>국립자연 휴양림 스탬프 투어란? '국립자연휴양림 스탬프 투어'는 아름다운 경관과 쉼터를 제공하는 숲으</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="flex-container">
+                                <div class="date">
+                                    <p>05</p>
+                                    <p>2019.09</p>
+                                </div>
+                                <div class="contents">
+                                    <p>반려견 동반 휴양림 정식운영 안내</p>
+                                    <p>반려견 동반 고객의휴향수요 충족을 위해 2018년 7월부터 시범운영한 "반려견 동반 자연휴양림"에 대하</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="flex-container">
+                                <div class="date">
+                                    <p>01</p>
+                                    <p>2019.08</p>
+                                </div>
+                                <div class="contents">
+                                    <p>국립자연휴양림 전기자동차 충전기...</p>
+                                    <p>국립자연휴양림 전기자동차 충전기 설치 현황○ 전기 자동차 충전기 설치 휴양림- 급속충전기(50w) : 유</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="flex-container">
+                                <div class="date">
+                                    <p>25</p>
+                                    <p>2019.07</p>
+                                </div>
+                                <div class="contents">
+                                    <p>제7회 국립자연휴양림 포토에세이...</p>
+                                    <p>국립자연휴양림관리소에서 국립자연휴양림 이용객들의 추억을 담아볼 수 있는 '제7회 국립자연휴양림 포</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table> <!-- table#bulletinContents-->
+            </div> <!-- div#notice -->
+            <div id="bulletin2" class="bulletin">
+                <div id="bulletin2controller" class="flex-container">
+                    <p>알림판</p>
+                    <div id="icons">
+                        <a href="#"><img src="images/control_left.png" alt="알림판 왼쪽"></a>
+                        <a href="#"><img src="images/control_pause.png" alt="알림판 정지"></a>
+                        <a href="#"><img src="images/control_right.png" alt="알림판 오른쪽"></a>
+                        <a href="#"><img src="images/control_list.png" alt="알림판 목록"></a>
+                    </div>
+                </div> <!-- div#bulletin2controller -->
+                <div id="bulletin2imgBox">
+                    <img src="images/notice_01.jpg" alt="알림판이미지">
+                </div> <!-- div#bulletin2imgBox -->
+            </div>
+            <!--bulletin-->
+        </div> <!-- div#asideFrame -->
+    </div> <!-- div#wrap -->
+</body></html>
