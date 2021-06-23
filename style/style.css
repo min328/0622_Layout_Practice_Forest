@@ -170,14 +170,16 @@ div#tab {
 }
 
 .tabBtn {
-    width: 110px;
+    width: 105px;
     height: 50px;
+    padding: 0px;
     border: none;
+    background-color: #fff;
+
     text-align: center;
     line-height: 30px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #fff;
 }
 
 .tabBtn > img {
@@ -187,7 +189,6 @@ div#tab {
 
 
 /* table#bulletinContents */
-
 table tr td {
     padding: 20px 0px;
 
